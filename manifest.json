@@ -1,7 +1,6 @@
 {
   "name": "Powerjott Note Taking",
   "short_name": "Powerjott",
-  "start_url": ".",
   "display": "standalone",
   "background_color": "black",
   "description": "Note taking like never before.",
