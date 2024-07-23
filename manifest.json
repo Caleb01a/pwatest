@@ -7,7 +7,7 @@
   "description": "Note taking like never before.",
   "icons": [
     {
-      "src": "powerjotlogo-removebg-preview.png",
+      "src": "img/powerjotlogo-removebg-preview.png",
       "sizes": "500x500",
       "type": "image/png"
     }
