@@ -19,7 +19,7 @@ installButton.addEventListener("click", async () => {
   installPrompt = null;
   installButton.setAttribute("hidden", "");
 });
-
+console.log(installPrompt)
     }
 });
 
