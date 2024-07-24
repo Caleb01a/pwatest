@@ -1,25 +1,15 @@
-let installPrompt = null;
-const installButton = document.querySelector("#install");
+let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        deferredPrompt = e;
+    });
 
-window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installPrompt = event;
-  installButton.removeAttribute("hidden");
-});
-
-window.addEventListener("DOMContentLoaded", (event) => {
-    const installButton = document.querySelector("#install");
-    if (installButton) {
-installButton.addEventListener("click", async () => {
-  if (!installPrompt) {
-    return;
-  }
-  const result = await installPrompt.prompt();
-  console.log(`Install prompt was: ${result.outcome}`);
-  installPrompt = null;
-  installButton.setAttribute("hidden", "");
-});
-console.log(installPrompt)
-    }
-});
-
+    const installApp = document.getElementById('installApp');
+    installApp.addEventListener('click', async () => {
+        if (deferredPrompt !== null) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                deferredPrompt = null;
+            }
+        }
+    });
