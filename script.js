@@ -20,7 +20,7 @@ let deferredPrompt;
 
            // const deferredPrompt = e;
 
-            const installButton = document.createElement('button');
+            const installButton = document.getElementByID('install');
             installButton.textContent = 'Install App';
             installButton.style.position = 'fixed';
             installButton.style.top = '10px';
