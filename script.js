@@ -1,1 +1,1 @@
-
+addEventListener("beforeinstallprompt", (event) => {});
