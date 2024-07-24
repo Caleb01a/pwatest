@@ -1,7 +1,7 @@
-// let deferredPrompt;
-//     window.addEventListener('beforeinstallprompt', (e) => {
-//         deferredPrompt = e;
-//     });
+let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        deferredPrompt = e;
+    });
 
 // window.addEventListener("DOMContentLoaded", (event) => {
 //     const installApp = document.getElementById('installApp');
