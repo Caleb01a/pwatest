@@ -9,7 +9,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
 
 window.addEventListener("DOMContentLoaded", (event) => {
     const installButton = document.querySelector("#install");
-    if (el) {
+    if (installButton) {
 installButton.addEventListener("click", async () => {
   if (!installPrompt) {
     return;
