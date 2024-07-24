@@ -74,7 +74,7 @@ a.button:hover, a.button:active {
     text-decoration: none;
 }
 
-#install {
+#install:link  #install:visited{
     padding: 10px;
     margin: 10px;
     border: none;
@@ -85,6 +85,17 @@ a.button:hover, a.button:active {
     left: 40%;
     text-decoration: none;
 }
+
+#install:hover, #install:active {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 125%;
+    background-color: rgb(255, 0, 0);
+    border-radius: 15px;
+    position: absolute;
+    left: 40%;
+    text-decoration: none;
 }
 
 .generic {
