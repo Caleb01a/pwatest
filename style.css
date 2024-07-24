@@ -74,6 +74,19 @@ a.button:hover, a.button:active {
     text-decoration: none;
 }
 
+a.buttona {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 125%;
+    background-color: blue;
+    border-radius: 15px;
+    position: absolute;
+    left: 40%;
+    text-decoration: none;
+}
+}
+
 .generic {
     margin-top: 25px;
     margin-bottom: 25px;
