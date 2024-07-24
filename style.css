@@ -74,7 +74,7 @@ a.button:hover, a.button:active {
     text-decoration: none;
 }
 
-#install:link  #install:visited{
+#install{
     padding: 10px;
     margin: 10px;
     border: none;
