@@ -18,7 +18,7 @@ let deferredPrompt;
 //     }
 // });
 
-           const deferredPrompt = e;
+           // const deferredPrompt = e;
 
             const installButton = document.createElement('button');
             installButton.textContent = 'Install App';
