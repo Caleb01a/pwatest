@@ -3,7 +3,9 @@ let deferredPrompt;
         deferredPrompt = e;
     });
 
+window.addEventListener("DOMContentLoaded", (event) => {
     const installApp = document.getElementById('installApp');
+    if (installApp) {
     installApp.addEventListener('click', async () => {
         if (deferredPrompt !== null) {
             deferredPrompt.prompt();
@@ -13,3 +15,8 @@ let deferredPrompt;
             }
         }
     });
+    }
+});
+
+
+
