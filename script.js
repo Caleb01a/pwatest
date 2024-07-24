@@ -1,10 +1,12 @@
+
 let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
         deferredPrompt = e;
     });
 
+window.addEventListener("DOMContentLoaded", (event) => {
     const installApp = document.getElementById('install');
-    installApp.addEventListener('click', async () => {
+    install.addEventListener('click', async () => {
         if (deferredPrompt !== null) {
             deferredPrompt.prompt();
             const { outcome } = await deferredPrompt.userChoice;
@@ -13,3 +15,8 @@ let deferredPrompt;
             }
         }
     });
+});
+
+
+
+
