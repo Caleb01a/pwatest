@@ -7,6 +7,9 @@ window.addEventListener("beforeinstallprompt", (event) => {
   installButton.removeAttribute("hidden");
 });
 
+window.addEventListener("DOMContentLoaded", (event) => {
+    const installButton = document.querySelector("#install");
+    if (el) {
 installButton.addEventListener("click", async () => {
   if (!installPrompt) {
     return;
@@ -16,3 +19,7 @@ installButton.addEventListener("click", async () => {
   installPrompt = null;
   installButton.setAttribute("hidden", "");
 });
+
+    }
+});
+
